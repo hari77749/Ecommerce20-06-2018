@@ -1,0 +1,38 @@
+
+
+	<!-- <form class="form-signin"></form> -->
+	<!-- <div *ngIf="!Loggedin; then login else LogedIn"></div> -->
+	<!-- <ng-template #login> -->
+			
+		<div>
+		<h1 class="form-signin-heading text-muted">Sign In</h1>
+		<!-- <div *ngIf="appUsers.UserName"> -->
+			<input [(ngModel)]="appUsers.UserName" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Email address" required="" autofocus="">
+		<!-- </div> -->
+		<!-- <div *ngIf="appUsers.Password"> -->
+		<input type="password" [(ngModel)]="appUsers.Password" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Password" required="">
+	<!-- </div> -->
+	<button class="btn btn-lg btn-primary btn-block" (click)="loginmein($event)">Log Me In</button>
+		<!-- <button class="btn btn-lg btn-primary btn-block" (click)="login($event)">Sign In </button> -->
+		</div>
+	<!-- </ng-template> -->
+	<!-- <ng-template #LogedIn> -->
+		<!-- <div>
+			<table class="table table-striped">
+					<tr>
+					  <th scope="row" *ngFor="let col of columns">
+						{{col}}
+					  </th>
+					</tr>
+					<tr *ngFor="let char of characters | async">
+					  <td *ngFor="let col of columns">
+						{{char[col]}}
+					  </td>
+					</tr>
+				  </table>
+			<span> User Logged in {{Loggedin}}</span>
+			<button class="btn btn-lg btn-primary btn-block" (click)="Logmeout($event)">Log Me Out </button>
+		</div> -->
+	<!-- </ng-template> -->
+		
+	<!-- <form class="form-signin"></form> -->

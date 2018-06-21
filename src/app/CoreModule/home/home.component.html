@@ -1,0 +1,18 @@
+
+ <div>
+			<table class="table table-striped">
+					<tr>
+					  <th scope="row" *ngFor="let col of columns">
+						{{col}}
+					  </th>
+					</tr>
+					<tr *ngFor="let char of characters | async">
+					  <td *ngFor="let col of columns">
+						{{char[col]}}
+					  </td>
+					</tr>
+				  </table>
+			<span> User Logged in {{Loggedin}}</span>
+			<button class="btn btn-lg btn-primary btn-block" (click)="Logmeout($event)">Log Me Out </button>
+		</div>
+
